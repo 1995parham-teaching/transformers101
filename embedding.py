@@ -1,7 +1,7 @@
 from transformers import AutoModel, AutoTokenizer
 
 if __name__ == "__main__":
-    tokenizer = AutoTokenizer.from_pretrained("microsoft/deberta-v3-base")
+    tokenizer = AutoTokenizer.from_pretrained("microsoft/deberta-base")
 
     model = AutoModel.from_pretrained("microsoft/deberta-v3-base")
 
