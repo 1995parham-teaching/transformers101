@@ -5,7 +5,7 @@ if __name__ == "__main__":
 
     model = AutoModel.from_pretrained("microsoft/deberta-v3-base")
 
-    tokens = tokenizer("Hello World", return_tensors="pt")
+    tokens = tokenizer("Hello World")
 
     for t in tokens.input_ids:
         print(tokenizer.decode(t))
