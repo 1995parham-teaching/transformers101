@@ -7,4 +7,5 @@ if __name__ == "__main__":
 
     tokens = tokenizer("Hello World", return_tensors="pt")
 
-    print(tokens)
+    for t in tokens.input_ids:
+        print(tokenizer.decode(t))
